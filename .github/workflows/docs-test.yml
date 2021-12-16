@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 14.x
           cache: yarn
-          cache-dependency-path: docs/package-lock.json
+          cache-dependency-path: docs/yarn.lock
       - name: Test build
         working-directory: docs
         run: |
