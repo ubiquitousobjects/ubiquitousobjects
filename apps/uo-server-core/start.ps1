@@ -1,0 +1,1 @@
+deno main.ts --allow-read --allow-write
