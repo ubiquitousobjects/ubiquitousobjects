@@ -7,5 +7,5 @@ export type PortBindings = {
 export type UoConfig = {
         portBindings: PortBindings;
         isConfigured: boolean;
-    }
+
 }
