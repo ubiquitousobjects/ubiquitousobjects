@@ -1,0 +1,1 @@
+The browser library uses the WatermelonDB database.
