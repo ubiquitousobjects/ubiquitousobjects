@@ -26,6 +26,7 @@ if (!config.isConfigured) {
 }
 
 
+
 function startServer() {
     
 class HomeResource extends Drash.Resource {

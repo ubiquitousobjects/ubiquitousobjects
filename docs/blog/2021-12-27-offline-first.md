@@ -1,5 +1,5 @@
 ---
-slug: first-blog-post
+slug: offline-first
 title: Offline First App Design
 authors:
   name: Ubiquitous Objects

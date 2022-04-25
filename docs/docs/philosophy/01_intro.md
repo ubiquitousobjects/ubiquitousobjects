@@ -6,6 +6,6 @@ It is such a departure from any application architecture that comes before it th
 
 In the following guide, we will go through computing history from the beginning to present day, discuss pivotal moments in its short history where mental models and software development approaches have fundamentally shifted, and introduce the theory and philosophy of the approach Ubiquitous Objects follows.
 
-If you are not interested in the history, and want to get started quickly, please [click here](/quickstart) to go to the Quick Start Guide.  Otherwise, please use the navication below to continue to the next page.
+If you are not interested in the history, and want to get started quickly, please [click here](../quickstart/01_intro.md) to go to the Quick Start Guide.  Otherwise, please use the navication below to continue to the next page.
 
 
