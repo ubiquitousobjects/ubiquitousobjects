@@ -4,15 +4,16 @@
 import { Drash } from "./deps.ts"
 
 
-
-import { UoConfig } from './uoconfig.ts'
+import { Config } from './config.ts'
 
 // 2. Check for configuration.  Determine if we are in "bootstrap" mode and if so, start up the UI for configuring the app.
-let config: UoConfig = JSON.parse(await Deno.readTextFile(".uoconfig.json"));
+let defaultConfigFileName: string = "default.ubconf.json";
+let config: Config = JSON.parse(await Deno.readTextFile(defaultConfigFileName));
 
 if (config === null) {
     // If configuration is invalid, fail to start up.
-    // TODO: print message and force quit.
+    console.error("Unable to parse configuration file", defaultConfigFileName);
+    Deno.exit(1);    
 }
 
 if (!config.isConfigured) {

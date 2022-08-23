@@ -1,7 +1,0 @@
-{
-    "portBindings": {
-        "onboarding": 8042,
-        "admin": 8042
-    },
-    "isConfigured": false
-}
