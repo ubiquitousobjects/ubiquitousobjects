@@ -5,6 +5,7 @@ import { Drash } from "./deps.ts"
 
 
 import { Config } from './config.ts'
+import { getTasks } from "./modules/tasks/index.ts";
 
 // 2. Check for configuration.  Determine if we are in "bootstrap" mode and if so, start up the UI for configuring the app.
 let defaultConfigFileName: string = "default.ubconf.json";
@@ -67,7 +68,13 @@ class HomeResource extends Drash.Resource {
 // 3. Otherwise, read in the configuration file and bind to a port to start accepting websocket connections.
 
 
+const task = getTasks("prefix");
+// Set up some background tasks
 
+// Test WASM tasks.
+await addTask({schedule: "0 30 * * * * ?", action: "wasm:python_test"})
+await addTask({schedule: "0 30 * * * * ?", action: "wasm:rust"})
+await addTask({schedule: "0 30 * * * * ?", action: "wasm:dotnet"})
 
 
 

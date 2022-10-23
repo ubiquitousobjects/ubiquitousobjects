@@ -10,7 +10,7 @@ export type Config = {
 
 }
 
-export defaultConfig = {
+export const defaultConfig = {
     "portBindings": {
         "onboarding": 8042,
         "admin": 11798
