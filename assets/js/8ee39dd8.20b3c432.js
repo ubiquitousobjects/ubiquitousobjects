@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[5798],{3157:function(s){s.exports=JSON.parse('{"allTagsPath":"/blog/tags","name":"offline-first","count":2,"permalink":"/blog/tags/offline-first"}')}}]);
