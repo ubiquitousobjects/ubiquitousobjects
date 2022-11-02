@@ -55,6 +55,13 @@ export interface Task {
 // All tasks must adhere to the same interface.  It is like an AWS Lambda or something, where we give them an SDK that processes
 // the invocation payload.
 
+
+export interface User {
+  id: string; //todo: GUID
+  // todo: add additional attributes
+}
+
+
 export interface TaskInput {
     // Who am I running this task as
     user: User
