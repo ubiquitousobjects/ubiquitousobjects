@@ -1,1 +1,1 @@
-deno test --allow-read --allow-write --allow-net --unstable main-tests.ts 
+deno test --allow-read --allow-write --allow-net --unstable tests/
