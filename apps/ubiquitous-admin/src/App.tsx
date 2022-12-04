@@ -1,34 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { Admin, EditGuesser, ListGuesser, Resource } from "react-admin";
+import jsonServerProvider from "ra-data-json-server";
+import { UserList } from "./components/resources/users";
+import { PostCreate, PostEdit, PostList } from "./components/resources/posts";
 
-function App() {
-  const [count, setCount] = useState(0)
+const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + Reactaa</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+import PostIcon from "@mui/icons-material/Book";
+import UserIcon from "@mui/icons-material/Group";
+import { Dashboard } from "./pages/Dashboard";
+import { authProvider } from "./providers/authProvider";
 
-export default App
+const App = () => (
+  <Admin
+    dataProvider={dataProvider}
+    dashboard={Dashboard}
+    authProvider={authProvider}
+  >
+    <Resource
+      name="users"
+      list={UserList}
+      recordRepresentation="name"
+      icon={UserIcon}
+    />
+    <Resource
+      name="posts"
+      list={PostList}
+      edit={PostEdit}
+      create={PostCreate}
+      icon={PostIcon}
+    />
+  </Admin>
+);
+
+export default App;
