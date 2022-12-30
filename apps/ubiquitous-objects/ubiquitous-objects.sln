@@ -5,6 +5,10 @@ VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ubiquitous-objects", "ubiquitous-objects.csproj", "{A9E1F90D-9637-4DAB-8825-7AE8D06B6592}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ubiquitous.functions", "..\ubiquitous.functions\ubiquitous.functions.csproj", "{BCFFA49B-2E3B-4B85-92B9-7C8B2277702F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ubiquitous.functions.tests.unit", "..\ubiquitous.functions.tests.unit\ubiquitous.functions.tests.unit.csproj", "{3A36D17E-4C81-4195-AC31-EA332482E079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A9E1F90D-9637-4DAB-8825-7AE8D06B6592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E1F90D-9637-4DAB-8825-7AE8D06B6592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9E1F90D-9637-4DAB-8825-7AE8D06B6592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFFA49B-2E3B-4B85-92B9-7C8B2277702F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFFA49B-2E3B-4B85-92B9-7C8B2277702F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFFA49B-2E3B-4B85-92B9-7C8B2277702F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFFA49B-2E3B-4B85-92B9-7C8B2277702F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A36D17E-4C81-4195-AC31-EA332482E079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A36D17E-4C81-4195-AC31-EA332482E079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A36D17E-4C81-4195-AC31-EA332482E079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A36D17E-4C81-4195-AC31-EA332482E079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MedallionShell" />
+    <None Remove="System.Text.Json" />
+    <None Remove="System.Runtime.Caching" />
+    <None Remove="ExecutionContext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MedallionShell" Version="1.6.2" />
+    <PackageReference Include="System.Text.Json" Version="7.0.1" />
+    <PackageReference Include="System.Runtime.Caching" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ExecutionContext\" />
+  </ItemGroup>
+</Project>
